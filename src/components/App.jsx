@@ -1,14 +1,14 @@
 import React from "react";
 import Form from "./Form";
 
-var userIsRegistered = false;
+var userIsRegistered = true;
 
 function App() {
-  return (
-    <div className="container">
-      <Form />
-    </div>
-  );
+	return (
+		<div className="container">
+			<Form registered={userIsRegistered} />
+		</div>
+	);
 }
 
 export default App;
